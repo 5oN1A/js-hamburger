@@ -1,10 +1,21 @@
 const hamburger = document.querySelector(".hamburger-menu");
+const openBtn = document.querySelector(".fa-bars");
 
 console.log(hamburger);
 
-hamburger.addEventListener("click", function () {
+openBtn.addEventListener("click", function () {
 
-
-hamburger.classList.add(".hamburger-menu.active");
+    hamburger.classList.add("active");
 
 })
+
+const closeBtn = document.querySelector(".fa-times");
+
+console.log(closeBtn);
+
+closeBtn.addEventListener("click", function () {
+
+    hamburger.classList.remove("active");
+
+})
+
