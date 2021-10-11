@@ -5,7 +5,7 @@ console.log(hamburger);
 
 openBtn.addEventListener("click", function () {
 
-    hamburger.classList.add("active");
+    hamburger.className += " active";
 
 })
 
