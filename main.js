@@ -1,7 +1,8 @@
 const hamburger = document.querySelector(".hamburger-menu");
 const openBtn = document.querySelector(".fa-bars");
 
-console.log(hamburger);
+console.log(hamburger.classList);
+console.log(hamburger.className);
 
 openBtn.addEventListener("click", function () {
 
@@ -15,7 +16,8 @@ console.log(closeBtn);
 
 closeBtn.addEventListener("click", function () {
 
-    hamburger.classList.remove("active");
+    hamburger.classList.toggle("active");
 
 })
+
 
